@@ -149,7 +149,7 @@ class VelloAIClient {
                     value: _,
                 });
             }
-            Object.defineProperty(window, "chrome", {
+            Object.defineProperty(window, "chrome1", {
                 value: true,
                 writable: false,
             });
