@@ -56,6 +56,7 @@ const vello_settings = {
     impersonation_prompt: DEFAULT_IMPERSONATION_PROMPT,
     character_nudge: true,
     vello_token_length: VELLO_TOKEN_LENGTH,
+    
 };
 
 let is_get_status_vello = false;
@@ -156,7 +157,7 @@ async function autoJailbreak() {
         if (
             reply
                 .toLowerCase()
-                .includes(poe_settings.jailbreak_response.toLowerCase())
+                .includes(vello_settings.jailbreak_response.toLowerCase())
         ) {
             jailbroken = true;
             break;
